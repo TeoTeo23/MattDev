@@ -29,7 +29,7 @@ GeoCoding section ends.
 Example of API call:
 https://maps.googleapis.com/maps/api/geocode/xml?address={CITY NAME}&key={API KEY}
 
-Google Maps API grants the choice of the format
+Google Maps API grants the choice of the format.
 The example returns an xml file.
 
 Likewise, when the button is pressed, Latitude and Longitude values should display on screen.
