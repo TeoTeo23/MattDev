@@ -46,7 +46,8 @@ public class GoogleServer {
             NodeList latitudeList = root.getElementsByTagName("lat");
             NodeList longitudeList = root.getElementsByTagName("lng");
             if(latitudeList != null && latitudeList.getLength() > 0 && longitudeList != null && longitudeList.getLength() > 0)
-                return (new Place(Double.parseDouble(latitudeList.item(0).getFirstChild().getNodeValue()), Double.parseDouble(longitudeList.item(0).getFirstChild().getNodeValue())));
+                return (new Place(Double.parseDouble(latitudeList.item(0).getFirstChild().getNodeValue()), Double.parseDouble(longitudeList.item(0)
+                        .getFirstChild().getNodeValue())));
         } catch (IOException | SAXException | ParserConfigurationException exception) {
             exception.printStackTrace();
             exception.getMessage();
