@@ -12,12 +12,12 @@ PROTOCOL:
 
 Example of API call:
 "http://api.openweathermap.org/geo/1.0/direct?q={CITY NAME}&limit=5&appid={API key}"
-URL returns json file (reference to "Sample.json").
+URL returns a json file.
 
 (CAN EITHER USE GOOGLE MAPS API, WHICH RETURNS A XML FILE).
 
 "LIMIT" field shows every city in the world called "CITY NAME".
-Field with Value "5" shows a maximun of five cities named "CITY NAME" (reference "SampleJSON.json").
+Field with Value "5" shows a maximun of five cities named "CITY NAME".
 
 Values to take from the JSON: Latitude and Longitude values.
 
@@ -29,7 +29,7 @@ GeoCoding section ends.
 Example of API call:
 https://maps.googleapis.com/maps/api/geocode/xml?address={CITY NAME}&key={API KEY}
 
-Google Maps API grants the choice of the format.
-In the example, an xml document is returned (Reference  "SampleXML.xml").
+Google Maps API grants the choice of the format
+The example returns an xml file.
 
 Likewise, when the button is pressed, Latitude and Longitude values should display on screen.
