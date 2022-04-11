@@ -24,11 +24,15 @@ public class Server {
     private String OPWFormat = "&mode=";
     private final String OPWKey = "&appid=d62ccb21b58a518a07a569e1843435d7";
 
+    private boolean isCalled = false;
     public Server(String instance){
         this.instance = instance;
     }
 
     protected String getInstance(){ return this.instance; }
+    protected Boolean calledServer(){ return this.isCalled; }
+
+    protected void setCallStatus(boolean callStatus){ this.isCalled = callStatus; }
 
     public Place getCoordinates(String address){
         // Setting up connection
